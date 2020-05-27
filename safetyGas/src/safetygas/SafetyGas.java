@@ -7,7 +7,7 @@ package safetygas;
 
 /**
  *
- * @author Rafae
+ * @author Rafaela
  */
 public class SafetyGas {
 
