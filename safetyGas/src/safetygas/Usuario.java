@@ -16,7 +16,19 @@ public class Usuario {
     private Integer Cod_Usuario;
     private String Email_Usuario;
     private String Nome_Usuario;
+    private Integer CPF_Usuario;
+    private Integer Identidade_Usuario;
+    private Integer CEP_Usuario;
+    private Integer Telefone_Usuario;
+    private String Endereco_Usuario;
 
+    @Override
+    public String toString() {
+        return "Usuario{" + "Cod_Usuario=" + Cod_Usuario + ", Email_Usuario=" + Email_Usuario + ", Nome_Usuario=" + Nome_Usuario + ", CPF_Usuario=" + CPF_Usuario + ", Identidade_Usuario=" + Identidade_Usuario + ", CEP_Usuario=" + CEP_Usuario + ", Telefone_Usuario=" + Telefone_Usuario + ", Endereco_Usuario=" + Endereco_Usuario + '}';
+    }
+    
+    
+   
     @Override
     public int hashCode() {
         int hash = 7;
@@ -38,11 +50,7 @@ public class Usuario {
         }
         return true;
     }
-    private Integer CPF_Usuario;
-    private Integer Identidade_Usuario;
-    private Integer CEP_Usuario;
-    private Integer Telefone_Usuario;
-    private String Endereco_Usuario;
+
 
     /**
      * @return the Cod_Usuario
