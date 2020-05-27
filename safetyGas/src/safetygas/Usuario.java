@@ -5,6 +5,8 @@
  */
 package safetygas;
 
+import java.util.Objects;
+
 /**
  *
  * @author Rafaela
@@ -14,6 +16,28 @@ public class Usuario {
     private Integer Cod_Usuario;
     private String Email_Usuario;
     private String Nome_Usuario;
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 61 * hash + Objects.hashCode(this.CPF_Usuario);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Usuario other = (Usuario) obj;
+        if (!Objects.equals(this.CPF_Usuario, other.CPF_Usuario)) {
+            return false;
+        }
+        return true;
+    }
     private Integer CPF_Usuario;
     private Integer Identidade_Usuario;
     private Integer CEP_Usuario;
