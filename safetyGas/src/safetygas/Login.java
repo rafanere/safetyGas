@@ -14,6 +14,8 @@ import java.util.Objects;
 public class Login {
     
     private Integer Cod_Login;
+    private String Login_Usuario;
+    private String Senha_Usuario;
 
     @Override
     public int hashCode() {
@@ -36,8 +38,11 @@ public class Login {
         }
         return true;
     }
-    private String Login_Usuario;
-    private String Senha_Usuario;
+    
+    @Override
+    public String toString() {
+        return "Login{" + "Cod_Login=" + Cod_Login + ", Login_Usuario=" + Login_Usuario + ", Senha_Usuario=" + Senha_Usuario + '}';
+    }
 
     /**
      * @return the Cod_Login
