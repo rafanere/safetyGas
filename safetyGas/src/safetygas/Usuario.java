@@ -27,7 +27,6 @@ public class Usuario {
         return "Usuario{" + "Cod_Usuario=" + Cod_Usuario + ", Email_Usuario=" + Email_Usuario + ", Nome_Usuario=" + Nome_Usuario + ", CPF_Usuario=" + CPF_Usuario + ", Identidade_Usuario=" + Identidade_Usuario + ", CEP_Usuario=" + CEP_Usuario + ", Telefone_Usuario=" + Telefone_Usuario + ", Endereco_Usuario=" + Endereco_Usuario + '}';
     }
     
-    
    
     @Override
     public int hashCode() {
