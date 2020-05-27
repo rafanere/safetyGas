@@ -5,6 +5,8 @@
  */
 package safetygas;
 
+import java.util.Objects;
+
 /**
  *
  * @author Rafaela
@@ -12,6 +14,28 @@ package safetygas;
 public class Login {
     
     private Integer Cod_Login;
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 79 * hash + Objects.hashCode(this.Login_Usuario);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Login other = (Login) obj;
+        if (!Objects.equals(this.Login_Usuario, other.Login_Usuario)) {
+            return false;
+        }
+        return true;
+    }
     private String Login_Usuario;
     private String Senha_Usuario;
 
