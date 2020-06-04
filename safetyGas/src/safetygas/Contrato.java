@@ -10,7 +10,7 @@ public class Contrato {
 	private Float valorContrato;
 	private Boolean status;
 	
-	//Métodos
+	//MÃ©todos
 	
 	public void ativarContrato () {
 		this.status=true;
@@ -24,7 +24,7 @@ public class Contrato {
 	
 	//Construtor
 	public Contrato () {
-		
+		this.status = false;
 	}
 	
 	public Integer getCodContrato() {
