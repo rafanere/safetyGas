@@ -8,15 +8,15 @@ public class Contrato {
 	private Date dtaIni;
 	private Date dtaFim;
 	private Float valorContrato;
-	private Boolean status;
+	private Boolean statusContrato;
 	
 	//Métodos
 	
 	public void ativarContrato () {
-		this.status=true;
+		this.statusContrato=true;
 	}
 	public void desativarContrato () {
-		this.status=false;
+		this.statusContrato=false;
 	}
 	
 	
@@ -24,7 +24,7 @@ public class Contrato {
 	
 	//Construtor
 	public Contrato () {
-		this.status = false;
+		this.statusContrato = false;
 	}
 	
 	public Integer getCodContrato() {
@@ -51,11 +51,11 @@ public class Contrato {
 	public void setValorContrato(Float valorContrato) {
 		this.valorContrato = valorContrato;
 	}
-	public Boolean getStatus() {
-		return status;
+	public Boolean getStatusContrato() {
+		return statusContrato;
 	}
-	public void setStatus(Boolean status) {
-		this.status = status;
+	public void setStatusContrato(Boolean statusContrato) {
+		this.statusContrato = statusContrato;
 	}
 		
 
