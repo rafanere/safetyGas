@@ -44,6 +44,20 @@ public class Login {
         return "Login{" + "Cod_Login=" + Cod_Login + ", Login_Usuario=" + Login_Usuario + ", Senha_Usuario=" + Senha_Usuario + '}';
     }
 
+    //Métodos
+    public String verificaSenha (String Senha_Usuario){
+        if(Senha_Usuario == null){
+            return "Preencha o campo da senha";
+        }
+        if(Senha_Usuario.length() < 6){
+            return "Senha inválida";
+        }
+        if(!Senha_Usuario.equals(Senha_Usuario)){
+            return "Senha incorreta. Tente novamente";
+        }
+        return null;
+    }
+
     /**
      * @return the Cod_Login
      */
