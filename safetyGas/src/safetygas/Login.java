@@ -17,7 +17,7 @@ public class Login {
     private Integer Cod_Login;
     private String Login_Usuario;
     private String Senha_Usuario;
-    public List <Usuario> usuarios ;
+    public List <Usuario> usuarios;
 
     @Override
     public int hashCode() {
@@ -60,7 +60,7 @@ public class Login {
         return null;
     }
 
-    public void cadastraUsuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, int CPF_Usuario,
+    public void cadastraUsuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario,
          int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario){
         Usuario usuario = new Usuario(Cod_Usuario, Email_Usuario, Nome_Usuario, CPF_Usuario,
             Identidade_Usuario, CEP_Usuario, Telefone_Usuario, Endereco_Usuario);
