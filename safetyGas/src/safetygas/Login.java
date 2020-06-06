@@ -67,7 +67,8 @@ public class Login {
         this.usuarios.add(usuario);
     }
     
-    
+    public void esqueciSenha(){
+    }
     
     /**
      * @return the Cod_Login
