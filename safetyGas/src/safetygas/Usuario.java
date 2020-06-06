@@ -50,6 +50,20 @@ public class Usuario {
         return true;
     }
 
+    //Métodos
+
+    public Usuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, int CPF_Usuario, 
+                int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario) {
+        this.Cod_Usuario = Cod_Usuario;
+        this.Email_Usuario = Email_Usuario;
+        this.Nome_Usuario = Nome_Usuario;
+        this.CPF_Usuario = CPF_Usuario;
+        this.Identidade_Usuario = Identidade_Usuario;
+        this.CEP_Usuario = CEP_Usuario;
+        this.Telefone_Usuario = Telefone_Usuario;
+        this.Endereco_Usuario = Endereco_Usuario;   
+    }
+
 
     /**
      * @return the Cod_Usuario
