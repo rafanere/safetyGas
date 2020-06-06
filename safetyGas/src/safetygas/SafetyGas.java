@@ -16,6 +16,9 @@ public class SafetyGas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Usuario u = new Usuario(1,"fulano@email.com","Fulano", "12345678910", 19876543, 32123000, 33112244, "Rua dos bobos, nº 0");
+        
+        
     }
     
 }
