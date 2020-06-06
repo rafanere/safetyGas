@@ -60,7 +60,9 @@ public class Usuario {
     //Métodos
 
     public Usuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario, 
-                int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario) {
+                int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario,
+                int Cod_Login, String Login_Usuario, String Senha_Usuario)
+                {
         this.Cod_Usuario = Cod_Usuario;
         this.Email_Usuario = Email_Usuario;
         this.Nome_Usuario = Nome_Usuario;
@@ -69,6 +71,10 @@ public class Usuario {
         this.CEP_Usuario = CEP_Usuario;
         this.Telefone_Usuario = Telefone_Usuario;
         this.Endereco_Usuario = Endereco_Usuario;   
+        this.Cod_Login = Cod_Login;
+        this.Login_Usuario = Login_Usuario;
+        this.Senha_Usuario = Senha_Usuario;
+                
     }
 
     public void atualizarUsuario (){
