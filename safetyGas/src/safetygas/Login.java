@@ -61,9 +61,11 @@ public class Login {
     }
 
     public void cadastraUsuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario,
-         int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario){
+         int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario,
+                int Cod_Login, String Login_Usuario, String Senha_Usuario){
         Usuario usuario = new Usuario(Cod_Usuario, Email_Usuario, Nome_Usuario, CPF_Usuario,
-            Identidade_Usuario, CEP_Usuario, Telefone_Usuario, Endereco_Usuario);
+            Identidade_Usuario, CEP_Usuario, Telefone_Usuario, Endereco_Usuario,
+                Cod_Login, Login_Usuario, Senha_Usuario);
         this.usuarios.add(usuario);
     }
     
