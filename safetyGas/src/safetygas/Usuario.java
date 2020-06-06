@@ -5,6 +5,7 @@
  */
 package safetygas;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -16,11 +17,17 @@ public class Usuario {
     private Integer Cod_Usuario;
     private String Email_Usuario;
     private String Nome_Usuario;
-    private Integer CPF_Usuario;
+    private String CPF_Usuario;
     private Integer Identidade_Usuario;
     private Integer CEP_Usuario;
     private Integer Telefone_Usuario;
     private String Endereco_Usuario;
+    private Integer Cod_Login;
+    private String Login_Usuario;
+    private String Senha_Usuario;
+    private Integer Cod_Usuario_Favorito;
+    public List <Usuario> usuarios;
+    
 
     @Override
     public String toString() {
@@ -52,7 +59,7 @@ public class Usuario {
 
     //Métodos
 
-    public Usuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, int CPF_Usuario, 
+    public Usuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario, 
                 int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario) {
         this.Cod_Usuario = Cod_Usuario;
         this.Email_Usuario = Email_Usuario;
@@ -64,7 +71,17 @@ public class Usuario {
         this.Endereco_Usuario = Endereco_Usuario;   
     }
 
+    public void atualizarUsuario (){
     
+    }
+            
+    public void acrescentarFavorito (int Cod_Usuario_Favorito){
+    
+    }
+    
+    public void removerFavorito (int Cod_Usuario_Favorito){
+    
+    }
     
     /**
      * @return the Cod_Usuario
@@ -111,14 +128,14 @@ public class Usuario {
     /**
      * @return the CPF_Usuario
      */
-    public Integer getCPF_Usuario() {
+    public String getCPF_Usuario() {
         return CPF_Usuario;
     }
 
     /**
      * @param CPF_Usuario the CPF_Usuario to set
      */
-    public void setCPF_Usuario(Integer CPF_Usuario) {
+    public void setCPF_Usuario(String CPF_Usuario) {
         this.CPF_Usuario = CPF_Usuario;
     }
 
@@ -176,6 +193,62 @@ public class Usuario {
      */
     public void setEndereco_Usuario(String Endereco_Usuario) {
         this.Endereco_Usuario = Endereco_Usuario;
+    }
+
+    /**
+     * @return the Cod_Login
+     */
+    public Integer getCod_Login() {
+        return Cod_Login;
+    }
+
+    /**
+     * @param Cod_Login the Cod_Login to set
+     */
+    public void setCod_Login(Integer Cod_Login) {
+        this.Cod_Login = Cod_Login;
+    }
+
+    /**
+     * @return the Login_Usuario
+     */
+    public String getLogin_Usuario() {
+        return Login_Usuario;
+    }
+
+    /**
+     * @param Login_Usuario the Login_Usuario to set
+     */
+    public void setLogin_Usuario(String Login_Usuario) {
+        this.Login_Usuario = Login_Usuario;
+    }
+
+    /**
+     * @return the Senha_Usuario
+     */
+    public String getSenha_Usuario() {
+        return Senha_Usuario;
+    }
+
+    /**
+     * @param Senha_Usuario the Senha_Usuario to set
+     */
+    public void setSenha_Usuario(String Senha_Usuario) {
+        this.Senha_Usuario = Senha_Usuario;
+    }
+
+    /**
+     * @return the Cod_Usuario_Favorito
+     */
+    public Integer getCod_Usuario_Favorito() {
+        return Cod_Usuario_Favorito;
+    }
+
+    /**
+     * @param Cod_Usuario_Favorito the Cod_Usuario_Favorito to set
+     */
+    public void setCod_Usuario_Favorito(Integer Cod_Usuario_Favorito) {
+        this.Cod_Usuario_Favorito = Cod_Usuario_Favorito;
     }
         
 }
