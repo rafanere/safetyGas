@@ -64,7 +64,8 @@ public class Usuario {
         this.Endereco_Usuario = Endereco_Usuario;   
     }
 
-
+    
+    
     /**
      * @return the Cod_Usuario
      */
