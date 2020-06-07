@@ -7,32 +7,32 @@ public class Detector {
 	private Boolean vazamento;
 
 
-	//MÈtodos
+	//M√©todos
 	
 	public void abrir () {
 		this.status = true;
-			System.out.println("A v·lvula est· aberta");
+			System.out.println("A v√°lvula est√° aberta");
 	}
 	public void fechar () {
 		this.status = false;
-			System.out.println("A v·lvula est· fechada");
+			System.out.println("A v√°lvula est√° fechada");
 	}
 	public void notificar() {	
 		
-		if (this.vazamento = false) {
-			System.out.println("Est· tudo seguro!");
+		if (this.vazamento == false) {
+			System.out.println("Est√° tudo seguro!");
 		}
 		else {
-			System.out.println("Est· ocorrendo um vazamento!");
+			System.out.println("Est√° ocorrendo um vazamento!");
 		}
 		
 	}
 	
 	
 	//Construtor
-	public Detector() {
-		this.vazamento = false;
+	public Detector(Integer codDetector) {
 		this.status = false;
+		this.vazamento=false;
 		}
 	
 	//Encap
