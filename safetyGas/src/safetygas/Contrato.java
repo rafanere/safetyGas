@@ -1,30 +1,37 @@
 package safetyGas;
 
-import java.util.Date;
 
 public class Contrato {
 	
 	private Integer codContrato;
-	private Date dtaIni;
-	private Date dtaFim;
+	private String dtaIni;
+	private String dtaFim;
 	private Float valorContrato;
 	private Boolean statusContrato;
 	
+
 	//Métodos
 	
 	public void ativarContrato () {
 		this.statusContrato=true;
+		System.out.println("O contrato foi ativado");
+		
 	}
+	
 	public void desativarContrato () {
 		this.statusContrato=false;
+		System.out.println("O contrato foi desativado");
+		
 	}
-	
-	
 	
 	
 	//Construtor
-	public Contrato () {
-		this.statusContrato = false;
+	public Contrato (Integer codContrato,String dtaIni, Float valorContrato){
+		this.codContrato = codContrato;
+		this.dtaIni=dtaIni;
+		this.valorContrato = valorContrato;
+		
+		
 	}
 	
 	public Integer getCodContrato() {
@@ -33,16 +40,18 @@ public class Contrato {
 	public void setCodContrato(Integer codContrato) {
 		this.codContrato = codContrato;
 	}
-	public Date getDtaIni() {
+	public String getDtaIni() {
 		return dtaIni;
 	}
-	public void setDtaIni(Date dtaIni) {
+	public void setdtaIni(String dtaIni) {
+		
 		this.dtaIni = dtaIni;
 	}
-	public Date getDtaFim() {
+	
+	public String getDtaFim() {
 		return dtaFim;
 	}
-	public void setDtaFim(Date dtaFim) {
+	public void setDtaFim(String dtaFim) {
 		this.dtaFim = dtaFim;
 	}
 	public Float getValorContrato() {
@@ -57,7 +66,7 @@ public class Contrato {
 	public void setStatusContrato(Boolean statusContrato) {
 		this.statusContrato = statusContrato;
 	}
-		
+
 
 	
 }
