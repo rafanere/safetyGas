@@ -13,12 +13,13 @@ import java.util.Objects;
  * @author Rafaela
  */
 public class Login {
-    
+    //Variáveis da classe
     private Integer Cod_Login;
     private String Login_Usuario;
     private String Senha_Usuario;
     public List <Usuario> usuarios;
 
+//O login do usuário é único, não podendo ser o mesmo para outro usuário
     @Override
     public int hashCode() {
         int hash = 5;
@@ -40,13 +41,15 @@ public class Login {
         }
         return true;
     }
-    
+     //Conversão para String, bons métodos de Java     
     @Override
     public String toString() {
         return "Login{" + "Cod_Login=" + Cod_Login + ", Login_Usuario=" + Login_Usuario + ", Senha_Usuario=" + Senha_Usuario + '}';
     }
 
     //Métodos
+    
+    //Verificação de senha
     public String verificaSenha (String Senha_Usuario){
         if(Senha_Usuario == null){
             return "Preencha o campo da senha";
@@ -60,6 +63,7 @@ public class Login {
         return null;
     }
 
+    //Cadastro de um novo usuário
     public void cadastraUsuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario,
          int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario,
          int Cod_Login, String Login_Usuario, String Senha_Usuario) 
@@ -70,8 +74,11 @@ public class Login {
         this.usuarios.add(usuario);
     }
     
+    //Redefinição de senha
     public void esqueciSenha(){
     }
+    
+    //Encapsulamento
     
     /**
      * @return the Cod_Login
