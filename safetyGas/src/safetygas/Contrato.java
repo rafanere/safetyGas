@@ -2,7 +2,7 @@ package safetyGas;
 
 
 public class Contrato {
-	
+	//Variáveis da classe
 	private Integer codContrato;
 	private String dtaIni;
 	private String dtaFim;
@@ -12,12 +12,14 @@ public class Contrato {
 
 	//Métodos
 	
+        //Ativa o contrato
 	public void ativarContrato () {
 		this.statusContrato=true;
 		System.out.println("O contrato foi ativado");
 		
 	}
-	
+        
+	//Desativa o contrato em caso de cancelamento ou término
 	public void desativarContrato () {
 		this.statusContrato=false;
 		System.out.println("O contrato foi desativado");
@@ -34,6 +36,9 @@ public class Contrato {
 		
 	}
 	
+        
+        //Encapsulamento
+        
 	public Integer getCodContrato() {
 		return codContrato;
 	}
