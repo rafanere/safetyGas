@@ -27,13 +27,13 @@ public class Usuario {
     private String Senha_Usuario;
     private Integer Cod_Usuario_Favorito;
     public List <Usuario> usuarios;
-    
 
+    
     @Override
     public String toString() {
-        return "Usuario{" + "Cod_Usuario=" + Cod_Usuario + ", Email_Usuario=" + Email_Usuario + ", Nome_Usuario=" + Nome_Usuario + ", CPF_Usuario=" + CPF_Usuario + ", Identidade_Usuario=" + Identidade_Usuario + ", CEP_Usuario=" + CEP_Usuario + ", Telefone_Usuario=" + Telefone_Usuario + ", Endereco_Usuario=" + Endereco_Usuario + '}';
+        return "Usuario{" + "Cod_Usuario=" + Cod_Usuario + ", Email_Usuario=" + Email_Usuario + ", Nome_Usuario=" + Nome_Usuario + ", CPF_Usuario=" + CPF_Usuario + ", Identidade_Usuario=" + Identidade_Usuario + ", CEP_Usuario=" + CEP_Usuario + ", Telefone_Usuario=" + Telefone_Usuario + ", Endereco_Usuario=" + Endereco_Usuario + ", Cod_Login=" + Cod_Login + ", Login_Usuario=" + Login_Usuario + ", Senha_Usuario=" + Senha_Usuario + ", Cod_Usuario_Favorito=" + Cod_Usuario_Favorito + ", usuarios=" + usuarios + '}';
     }
-    
+     
    
     @Override
     public int hashCode() {
