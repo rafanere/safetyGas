@@ -13,7 +13,7 @@ public class Suporte {
     
     private int Cod_Atendimento;
     private int Cod_Usuario;
-    private Boolean status;
+    private boolean status;
 
     @Override
     public int hashCode() {
