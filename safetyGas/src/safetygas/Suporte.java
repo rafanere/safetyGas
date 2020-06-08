@@ -13,6 +13,7 @@ public class Suporte {
     
     private int Cod_Atendimento;
     private int Cod_Usuario;
+    private Boolean status;
 
     @Override
     public int hashCode() {
@@ -41,6 +42,17 @@ public class Suporte {
         return "Suporte{" + "Cod_Atendimento=" + Cod_Atendimento + ", Cod_Usuario=" + Cod_Usuario + '}';
     }
 
+    public void contato_Suporte_Tecnico(){
+    }
+    
+    public void responder_Duvidas(){
+    }
+    
+    public void fechar () {
+        this.setStatus((Boolean) false);
+			System.out.println("A válvula está fechada");
+	}
+    
     /**
      * @return the Cod_Atendimento
      */
@@ -67,6 +79,20 @@ public class Suporte {
      */
     public void setCod_Usuario(int Cod_Usuario) {
         this.Cod_Usuario = Cod_Usuario;
+    }
+
+    /**
+     * @return the status
+     */
+    public Boolean getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
     
 }
