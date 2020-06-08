@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package safetygas;
+package safetyGas;
 
 /**
  *
@@ -15,6 +15,11 @@ public class Suporte {
     private int Cod_Usuario;
     private boolean status;
 
+    @Override
+    public String toString() {
+        return "Suporte{" + "Cod_Atendimento=" + Cod_Atendimento + ", Cod_Usuario=" + Cod_Usuario + '}';
+    }
+    
     @Override
     public int hashCode() {
         int hash = 3;
@@ -37,11 +42,7 @@ public class Suporte {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "Suporte{" + "Cod_Atendimento=" + Cod_Atendimento + ", Cod_Usuario=" + Cod_Usuario + '}';
-    }
-
+    
     public void contato_Suporte_Tecnico(){
     }
     
