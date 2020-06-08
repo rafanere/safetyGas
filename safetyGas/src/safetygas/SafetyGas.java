@@ -23,9 +23,13 @@ public class SafetyGas {
         d.notificar();
         System.out.println("\n");
         d.setVazamento(true);
-        d.notificar();
+        d.notificar();          
         
-        
+        Suporte s = new Suporte();
+        s.fechar(false);
+        s.contato_Suporte_Tecnico(1,1);
+        s.responder_Duvidas(1,1);
+        System.out.println("\n");
     }
     
 }
