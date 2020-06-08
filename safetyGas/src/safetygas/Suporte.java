@@ -11,9 +11,10 @@ package safetyGas;
  */
 public class Suporte {
     
-    private int Cod_Atendimento;
-    private int Cod_Usuario;
-    private boolean status;
+    private Integer Cod_Atendimento;
+    private Integer Cod_Usuario;
+    private Boolean status;
+
 
     @Override
     public String toString() {
@@ -43,13 +44,13 @@ public class Suporte {
     }
 
     
-    public void contato_Suporte_Tecnico(){
+    public void contato_Suporte_Tecnico(Integer Cod_Atendimento, Integer Cod_Usuario){
     }
     
-    public void responder_Duvidas(){
+    public void responder_Duvidas(Integer Cod_Atendimento, Integer Cod_Usuario){
     }
     
-    public void fechar () {
+    public void fechar (Boolean status) {
         this.setStatus((Boolean) false);
 			System.out.println("A válvula está fechada");
 	}
