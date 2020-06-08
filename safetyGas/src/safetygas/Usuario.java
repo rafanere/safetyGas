@@ -14,6 +14,9 @@ import java.util.Objects;
  */
 public class Usuario {
     
+    
+    //Variáveis da classe
+    
     private Integer Cod_Usuario;
     private String Email_Usuario;
     private String Nome_Usuario;
@@ -28,13 +31,13 @@ public class Usuario {
     private Integer Cod_Usuario_Favorito;
     public List <Usuario> usuarios;
 
-    
+    //Conversão para String, bons métodos de Java     
     @Override
     public String toString() {
         return "Usuario{" + "Cod_Usuario=" + Cod_Usuario + ", Email_Usuario=" + Email_Usuario + ", Nome_Usuario=" + Nome_Usuario + ", CPF_Usuario=" + CPF_Usuario + ", Identidade_Usuario=" + Identidade_Usuario + ", CEP_Usuario=" + CEP_Usuario + ", Telefone_Usuario=" + Telefone_Usuario + ", Endereco_Usuario=" + Endereco_Usuario + ", Cod_Login=" + Cod_Login + ", Login_Usuario=" + Login_Usuario + ", Senha_Usuario=" + Senha_Usuario + ", Cod_Usuario_Favorito=" + Cod_Usuario_Favorito + ", usuarios=" + usuarios + '}';
     }
      
-   
+    //Verificação de CPF. O sistema só poderá ter um cadastro por CPF
     @Override
     public int hashCode() {
         int hash = 7;
@@ -59,6 +62,7 @@ public class Usuario {
 
     //Métodos
 
+    //Cadastro do usuário
     public Usuario (int Cod_Usuario, String Email_Usuario, String Nome_Usuario, String CPF_Usuario, 
                 int Identidade_Usuario, int CEP_Usuario, int Telefone_Usuario, String Endereco_Usuario,
                 int Cod_Login, String Login_Usuario, String Senha_Usuario)
@@ -76,18 +80,20 @@ public class Usuario {
         this.Senha_Usuario = Senha_Usuario;
                 
     }
-
+    //Atualiza o cadastro do usuário
     public void atualizarUsuario (){
     
     }
-            
+    //Adiciona um endereço favorito
     public void acrescentarFavorito (int Cod_Usuario_Favorito){
     
     }
-    
+    //Remove um endereço favorito
     public void removerFavorito (int Cod_Usuario_Favorito){
     
     }
+    
+    //Encapsulamento
     
     /**
      * @return the Cod_Usuario
