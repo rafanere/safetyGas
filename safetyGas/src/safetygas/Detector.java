@@ -1,7 +1,7 @@
 package safetyGas;
 
 public class Detector {
-	
+	//Variáveis da classe
 	private Integer codDetector;
 	private Boolean status;
 	private Boolean vazamento;
@@ -9,14 +9,19 @@ public class Detector {
 
 	//Métodos
 	
+        //Abre a válvuça
 	public void abrir () {
 		this.status = true;
 			System.out.println("A válvula está aberta");
 	}
+        
+        //Fecha a válvula
 	public void fechar () {
 		this.status = false;
 			System.out.println("A válvula está fechada");
 	}
+        
+        //Envia notificações ao usuário
 	public void notificar() {	
 		
 		if (this.vazamento == false) {
@@ -35,7 +40,7 @@ public class Detector {
 		this.vazamento=false;
 		}
 	
-	//Encap
+	//Encapsulamento
 	public Integer getCodDetector() {
 		return codDetector;
 	}
