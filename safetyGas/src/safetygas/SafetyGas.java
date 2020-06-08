@@ -7,6 +7,9 @@ public class SafetyGas {
     public static void main(String[] args) {
    
         Usuario u = new Usuario(1,"fulano@email.com","Fulano", "12345678910",19876543, 32123000, 33112244, "Rua dos bobos, nº 0", 1, "fulano", "fu123ano5");
+        u.acrescentarFavorito(1);
+        u.atualizarUsuario();
+        System.out.println("\n");
         
         Contrato c = new Contrato(3124,"23/04/1986", (float) 100.00);
         c.ativarContrato();
