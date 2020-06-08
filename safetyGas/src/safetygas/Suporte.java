@@ -11,16 +11,17 @@ package safetyGas;
  */
 public class Suporte {
     
+    ////Variáveis da classe
     private Integer Cod_Atendimento;
     private Integer Cod_Usuario;
     private Boolean status;
 
-
+ //Conversão para String, bons métodos de Java     
     @Override
     public String toString() {
         return "Suporte{" + "Cod_Atendimento=" + Cod_Atendimento + ", Cod_Usuario=" + Cod_Usuario + '}';
     }
-    
+//Cada atendimento terá seu código
     @Override
     public int hashCode() {
         int hash = 3;
@@ -43,17 +44,23 @@ public class Suporte {
         return true;
     }
 
+  //Métodos
     
+    //Forma de contato com o suporte
     public void contato_Suporte_Tecnico(Integer Cod_Atendimento, Integer Cod_Usuario){
     }
     
+    //Caso haja dúvida não será necessário abrir um chamado, apenas enviar a pergunta
     public void responder_Duvidas(Integer Cod_Atendimento, Integer Cod_Usuario){
     }
     
+    //Caso haja vazamento de gás o suporte está liberado para fechar a válvula
     public void fechar (Boolean status) {
         this.setStatus((Boolean) false);
 			System.out.println("A válvula está fechada");
 	}
+    
+    //Encapsulamento
     
     /**
      * @return the Cod_Atendimento
